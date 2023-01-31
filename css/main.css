@@ -1,8 +1,16 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: white;
   margin: 0;
   padding: 0;
+}
+.skip{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 h1,
@@ -12,28 +20,37 @@ h4,
 h5,
 h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  text-align:left;
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 img {
   width: 100%;
+  
 }
 
 .main-nav ul {
   list-style: none;
+  text-decoration: underline;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  margin: 20px;
+  padding:10px;
+
+}
+.field{
+  width: 50%;
+  border-radius: 5px;
+  border-style: double;
 }
 
 .main-nav ul li {
-  flex: 1;
+  flex:1;
   text-align: center;
 }
 
@@ -47,7 +64,9 @@ img {
 form input,
 form textarea {
   display: block;
-  width: 100%;
+  width: 50%;
+  border-radius: 5px;
+  border-style: double;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
 }
@@ -61,7 +80,8 @@ form textarea {
 
 form button {
   background: none;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
   padding: 1rem;
   text-transform: uppercase;
 }
